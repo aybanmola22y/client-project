@@ -77,7 +77,7 @@ export default function News() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">News & Articles</h1>
           <p className="text-xl text-foreground/70 max-w-3xl">
-            Stay informed with the latest industry insights, company updates, and expert tips from the Prime Cuts team.
+            Stay informed with the latest industry insights, company updates, and expert tips from the 786-SG team.
           </p>
         </div>
       </section>
