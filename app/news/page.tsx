@@ -64,6 +64,16 @@ export default function News() {
       image: "/news-behind-scenes.jpg",
       readTime: "8 min read",
     },
+    {
+      id: 7,
+      title: "Behind the Scenes: A Day at 786-SG",
+      excerpt:
+        "Take a virtual tour of our state-of-the-art facility and meet the dedicated team that ensures quality at every step.",
+      date: "February 15, 2025",
+      category: "Company",
+      image: "/news-behind-scenes.jpg",
+      readTime: "8 min read",
+    },
   ]
 
   const categories = ["All", "News", "Techniques", "Guides", "Products", "Sustainability", "Company"]
