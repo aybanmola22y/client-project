@@ -9,7 +9,7 @@ export default function Certification() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-b from-background to-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+          <h1 className="text-5xl lg:text-6xl font-bold text-green-700 mb-6 text-balance">
             Certifications & Standards
           </h1>
           <p className="text-xl text-foreground/70 max-w-3xl">
@@ -22,7 +22,7 @@ export default function Certification() {
       {/* Main Certifications */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-foreground mb-16 text-balance">Our Certifications</h2>
+          <h2 className="text-4xl font-bold text-center text-green-700 mb-16 text-balance">Our Certifications</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
@@ -92,13 +92,13 @@ export default function Certification() {
                 ],
               },
             ].map((cert, index) => (
-              <div key={index} className="bg-card p-8 rounded-lg shadow-md">
-                <h3 className="text-2xl font-bold text-foreground mb-3">{cert.title}</h3>
+              <div key={index} className="bg-card p-8 rounded-lg shadow-md transition-all hover:scale-105">
+                <h3 className="text-2xl font-bold text-green-700 mb-3">{cert.title}</h3>
                 <p className="text-foreground/70 mb-6">{cert.description}</p>
                 <ul className="space-y-2">
                   {cert.details.map((detail, detailIndex) => (
                     <li key={detailIndex} className="flex items-start gap-3">
-                      <span className="text-accent font-bold mt-1">✓</span>
+                      <span className="text-green-700 font-bold mt-1">✓</span>
                       <span className="text-foreground/70">{detail}</span>
                     </li>
                   ))}
@@ -112,7 +112,7 @@ export default function Certification() {
       {/* Quality Assurance Process */}
       <section className="py-20 bg-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-foreground mb-16 text-balance">
+          <h2 className="text-4xl font-bold text-center text-green-700 mb-16 text-balance">
             Quality Assurance Process
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -139,10 +139,10 @@ export default function Certification() {
               },
             ].map((item, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-green-700 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
+                <h3 className="text-xl font-bold text-green-700 mb-2">{item.title}</h3>
                 <p className="text-foreground/70">{item.description}</p>
               </div>
             ))}
@@ -153,7 +153,7 @@ export default function Certification() {
       {/* Testing & Analysis */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-foreground mb-16 text-balance">Testing & Analysis</h2>
+          <h2 className="text-4xl font-bold text-center text-green-700 mb-16 text-balance">Testing & Analysis</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -181,8 +181,8 @@ export default function Certification() {
                 description: "DNA testing and tracking to verify product origin and authenticity.",
               },
             ].map((test, index) => (
-              <div key={index} className="bg-card p-6 rounded-lg shadow-md">
-                <h3 className="text-lg font-bold text-foreground mb-3">{test.title}</h3>
+              <div key={index} className="bg-card p-6 rounded-lg shadow-md transition-all hover:scale-105">
+                <h3 className="text-lg font-bold text-green-700 mb-3">{test.title}</h3>
                 <p className="text-foreground/70">{test.description}</p>
               </div>
             ))}
@@ -193,7 +193,7 @@ export default function Certification() {
       {/* Compliance Documentation */}
       <section className="py-20 bg-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-foreground mb-16 text-balance">Documentation & Records</h2>
+          <h2 className="text-4xl font-bold text-center text-green-700 mb-16 text-balance">Documentation & Records</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
@@ -213,10 +213,10 @@ export default function Certification() {
                 description: "Records of employee training in food safety and handling procedures.",
               },
             ].map((doc, index) => (
-              <div key={index} className="bg-background p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-foreground mb-3">{doc.title}</h3>
+              <div key={index} className="bg-background p-8 rounded-lg shadow-md transition-all hover:scale-105">
+                <h3 className="text-xl font-bold text-green-700 mb-3">{doc.title}</h3>
                 <p className="text-foreground/70 mb-6">{doc.description}</p>
-                <button className="text-primary font-semibold hover:text-primary/80 transition-colors">
+                <button className="text-green-700 font-semibold hover:text-green-600 transition-colors">
                   Request Documentation →
                 </button>
               </div>
@@ -226,14 +226,14 @@ export default function Certification() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-green-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6 text-balance">Confidence in Quality</h2>
-          <p className="text-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
+          <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
             Our comprehensive certifications and rigorous quality assurance processes ensure you receive only the finest
             products.
           </p>
-          <button className="inline-block px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors">
+          <button className="inline-block px-8 py-3 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors">
             Learn More About Our Standards
           </button>
         </div>

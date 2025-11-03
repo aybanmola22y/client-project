@@ -36,7 +36,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-b from-background to-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">Contact Us</h1>
+          <h1 className="text-5xl lg:text-6xl font-bold text-green-700 mb-6 text-balance">Contact Us</h1>
           <p className="text-xl text-foreground/70 max-w-3xl">
             Get in touch with our team. We're here to answer your questions and discuss how 786-SG can serve your
             business.
@@ -65,9 +65,9 @@ export default function Contact() {
                 subtext: "Singapore 389910",
               },
             ].map((item, index) => (
-              <div key={index} className="bg-card p-8 rounded-lg shadow-md text-center">
-                <h3 className="text-xl font-bold text-foreground mb-3">{item.title}</h3>
-                <p className="text-lg font-semibold text-primary mb-2">{item.content}</p>
+              <div key={index} className="bg-card p-8 rounded-lg shadow-md text-center transition-all hover:scale-105">
+                <h3 className="text-xl font-bold text-green-700 mb-3">{item.title}</h3>
+                <p className="text-lg font-semibold text-foreground mb-2">{item.content}</p>
                 <p className="text-sm text-foreground/60">{item.subtext}</p>
               </div>
             ))}
@@ -77,7 +77,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form */}
             <div className="bg-card p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
+              <h2 className="text-2xl font-bold text-green-700 mb-6">Send us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-semibold text-foreground mb-2">Name</label>
@@ -87,7 +87,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-green-700"
                     placeholder="Your name"
                   />
                 </div>
@@ -101,7 +101,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-green-700"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -112,7 +112,7 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-green-700"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-green-700"
                     placeholder="Your company name"
                   />
                 </div>
@@ -137,7 +137,7 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground focus:outline-none focus:ring-2 focus:ring-green-700"
                   >
                     <option value="">Select a subject</option>
                     <option value="wholesale">Wholesale Inquiry</option>
@@ -156,14 +156,14 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                    className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-green-700 resize-none"
                     placeholder="Tell us about your needs..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+                  className="w-full px-6 py-3 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors"
                 >
                   Send Message
                 </button>
@@ -185,7 +185,7 @@ export default function Contact() {
               </div>
 
               <div className="bg-card p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-foreground mb-6">Business Hours</h3>
+                <h3 className="text-xl font-bold text-green-700 mb-6">Business Hours</h3>
                 <div className="space-y-3">
                   {[
                     { day: "Monday - Friday", hours: "8:00 AM - 5:00 PM" },

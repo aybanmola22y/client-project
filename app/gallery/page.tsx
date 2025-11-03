@@ -12,73 +12,73 @@ export default function Gallery() {
       category: "products",
       title: "Premium Beef Cuts",
       description: "Selection of our finest beef cuts",
-      image: "/gallery-premium-beef-cuts.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "products",
       title: "Fresh Pork Selection",
       description: "High-quality pork products",
-      image: "/gallery-fresh-pork-selection.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "products",
       title: "Specialty Lamb Cuts",
       description: "Premium lamb offerings",
-      image: "/gallery-specialty-lamb-cuts.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "products",
       title: "Poultry Excellence",
       description: "Premium poultry products",
-      image: "/gallery-poultry-excellence.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "facility",
       title: "Modern Processing Facility",
       description: "State-of-the-art meat processing",
-      image: "/gallery-modern-processing-facility.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "facility",
       title: "Cold Storage Systems",
       description: "Temperature-controlled storage",
-      image: "/gallery-cold-storage-systems.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "facility",
       title: "Quality Control Lab",
       description: "Advanced testing facilities",
-      image: "/gallery-quality-control-lab.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "facility",
       title: "Packaging Department",
       description: "Professional packaging operations",
-      image: "/gallery-packaging-department.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "team",
       title: "Expert Butchers",
       description: "Our skilled team at work",
-      image: "/gallery-expert-butchers.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "team",
       title: "Team Training",
       description: "Continuous professional development",
-      image: "/gallery-team-training.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "team",
       title: "Customer Service",
       description: "Dedicated support team",
-      image: "/gallery-customer-service.jpg",
+      image: "/premium.jpg",
     },
     {
       category: "events",
       title: "Industry Conference",
       description: "Networking with industry leaders",
-      image: "/gallery-industry-conference.jpg",
+      image: "/premium.jpg",
     },
   ]
 
@@ -100,9 +100,9 @@ export default function Gallery() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-b from-background to-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">Gallery</h1>
+          <h1 className="text-5xl lg:text-6xl font-bold text-green-700 mb-6 text-balance">Gallery</h1>
           <p className="text-xl text-foreground/70 max-w-3xl">
-            Explore our premium products, state-of-the-art facilities, and dedicated team that makes Prime Cuts the
+            Explore our premium products, state-of-the-art facilities, and dedicated team that makes 786 SG the
             industry leader.
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function Gallery() {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-2 rounded-lg font-semibold transition-colors ${
                   selectedCategory === category.id
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-green-700 text-white"
                     : "bg-card text-foreground hover:bg-muted"
                 }`}
               >
@@ -136,7 +136,7 @@ export default function Gallery() {
             {filteredItems.map((item, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow"
+                className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105"
               >
                 <div className="relative h-64 overflow-hidden bg-muted">
                   <img
@@ -156,30 +156,10 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-foreground mb-16 text-balance">By The Numbers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            {[
-              { number: "50,000+", label: "Lbs Processed Weekly" },
-              { number: "100+", label: "Product Varieties" },
-              { number: "15,000", label: "Sq Ft Facility" },
-              { number: "25+", label: "Skilled Professionals" },
-            ].map((stat, index) => (
-              <div key={index}>
-                <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
-                <div className="text-foreground/70">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-foreground mb-16 text-balance">What Our Clients Say</h2>
+          <h2 className="text-4xl font-bold text-center text-green-700 mb-16 text-balance">What Our Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -201,10 +181,10 @@ export default function Gallery() {
                 restaurant: "Fine Dining Restaurant",
               },
             ].map((testimonial, index) => (
-              <div key={index} className="bg-card p-8 rounded-lg shadow-md">
+              <div key={index} className="bg-card p-8 rounded-lg shadow-md transition-all hover:scale-105">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-accent text-lg">
+                    <span key={i} className="text-yellow-500 text-lg">
                       ★
                     </span>
                   ))}
