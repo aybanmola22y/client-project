@@ -18,12 +18,13 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-[#ffeda8] text-gray-900 shadow-lg transition-all duration-300 ease-in-out">
+    <header className="sticky top-0 z-50 bg-[#ffeda8] text-gray-900 shadow-md transition-all duration-300 ease-in-out">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex justify-between items-center h-20 relative">
-          {/* Logo - always on the left */}
-          <Link href="/" className="flex items-center gap-3">
+        {/* Header Layout */}
+        <div className="flex items-center justify-between h-20 relative">
+          {/* Logo on the left */}
+          <Link href="/" className="flex items-center gap-3 z-10">
             <div className="w-14 h-14 flex items-center justify-center">
               <img 
                 src="/logo.jpg"
@@ -33,8 +34,8 @@ export function Navigation() {
             </div>
           </Link>
 
-          {/* Desktop Navigation (centered) */}
-          <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+          {/* Centered Desktop Navigation */}
+          <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-10 whitespace-nowrap">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -46,10 +47,10 @@ export function Navigation() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button (right-aligned) */}
+          {/* Mobile Menu Button on the right */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 hover:bg-black/10 rounded-lg transition-colors"
+            className="lg:hidden p-2 hover:bg-black/10 rounded-lg transition-colors z-10"
           >
             <svg
               className={`w-7 h-7 transform transition-transform duration-300 ease-in-out ${
@@ -64,7 +65,7 @@ export function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Navigation with animation */}
+        {/* Mobile Dropdown */}
         <div
           className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${
             isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
