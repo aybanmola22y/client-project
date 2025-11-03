@@ -69,7 +69,7 @@ export default function Home() {
               {
                 title: "Poultry",
                 description:
-                  "Fresh, plump chicken and turkey, free from additives and perfect for a variety of cuisines.",
+                  "Fresh, plump chicken, free from additives and perfect for a variety of cuisines.",
                 src: "/poultry.png",
               },
             ].map((feature, index) => (

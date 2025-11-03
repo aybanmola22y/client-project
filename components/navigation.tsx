@@ -9,7 +9,7 @@ const navItems = [
   { label: "Corporate", href: "/corporate" },
   { label: "Services", href: "/services" },
   { label: "Gallery", href: "/gallery" },
-  { label: "News & Articles", href: "/news" },
+  { label: "Reviews", href: "/reviews" },
   { label: "Contact Us", href: "/contact" },
   { label: "Certification", href: "/certification" },
 ]

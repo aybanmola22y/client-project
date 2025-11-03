@@ -5,37 +5,37 @@ import Link from "next/link"
 export default function Services() {
   const services = [
     {
-      title: "Precision Cutting",
+      title: "• Precision Cutting",
       description:
         "Modern equipment allows us to cut meat to exact specifications, including cubing, slicing, and mincing.",
       features: [],
     },
     {
-      title: "Expert Butchers",
+      title: "• Expert Butchers",
       description:
         "Our skilled butchers can adjust thickness and customize cuts based on client needs.",
       features: [],
     },
     {
-      title: "High Standards",
+      title: "• High Standards",
       description:
         "We ensure top-tier service and product quality, whether you choose standard cuts or custom orders.",
       features: [],
     },
     {
-      title: "Convenient Packaging",
+      title: "• Convenient Packaging",
       description:
         "We offer a variety of prepackaged meats in serving sizes ideal for restaurants and catering services.",
       features: [],
     },
     {
-      title: "Bulk Packaging Option",
+      title: "• Bulk Packaging Option",
       description:
         "Bulk packaging is available upon request for larger orders.",
       features: [],
     },
     {
-      title: "Strict Food Safety",
+      title: "• Strict Food Safety",
       description:
         "Our products are stored at optimal temperatures to maintain freshness, with stringent food safety regulations in place to ensure top quality.",
       features: [],
@@ -73,7 +73,7 @@ export default function Services() {
             </div>
             <div className="relative">
               <img
-                src="/service.webp"
+                src="/COOOOOW.png"
                 alt="Meat cutting and halal certification"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />

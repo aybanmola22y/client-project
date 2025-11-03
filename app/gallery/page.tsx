@@ -16,8 +16,8 @@ export default function Gallery() {
     },
     {
       category: "products",
-      title: "Fresh Pork Selection",
-      description: "High-quality pork products",
+      title: "Premium Beef Cuts",
+      description: "Selection of our finest beef cuts",
       image: "/premium.jpg",
     },
     {
@@ -155,6 +155,30 @@ export default function Gallery() {
           </div>
         </div>
       </section>
+
+      {/* Stats Section */}
+<section className="py-20 bg-card">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-4xl font-bold text-center text-foreground mb-16 text-balance">
+      By The Numbers
+    </h2>
+
+    {/* Center the 3 stats */}
+    <div className="flex flex-col md:flex-row justify-center items-center gap-12 text-center">
+      {[
+        { number: "20,000+", label: "KG Processed Weekly" },
+        { number: "100+", label: "Product Varieties" },
+        { number: "10+", label: "Skilled Professionals" },
+      ].map((stat, index) => (
+        <div key={index}>
+          <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
+          <div className="text-foreground/70">{stat.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Testimonials Section */}
       <section className="py-20 bg-background">

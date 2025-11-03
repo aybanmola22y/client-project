@@ -90,15 +90,6 @@ export function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-semibold mb-4">Social Media</h4>
-            <ul className="space-y-2 text-sm">
-              <li>Facebook </li>
-              <li>Instagram</li>
-            </ul>
-          </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/80">
