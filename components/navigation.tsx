@@ -20,9 +20,9 @@ export function Navigation() {
   return (
     <header className="sticky top-0 z-50 bg-[#ffeda8] text-gray-900 shadow-lg transition-all duration-300 ease-in-out">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+        <div className="relative flex justify-center items-center h-20">
+          {/* Logo - positioned on the left */}
+          <Link href="/" className="absolute left-4 flex items-center gap-3">
             <div className="w-14 h-14 flex items-center justify-center">
               <img 
                 src="/logo.jpg"
@@ -33,7 +33,7 @@ export function Navigation() {
             <span className="text-2xl font-bold hidden sm:inline text-[#CD7F32]"></span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation (centered) */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
@@ -46,13 +46,13 @@ export function Navigation() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button (centered) */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 hover:bg-black/10 rounded-lg transition-colors"
           >
             <svg
-              className={`w-6 h-6 transform transition-transform duration-300 ease-in-out ${
+              className={`w-7 h-7 transform transition-transform duration-300 ease-in-out ${
                 isOpen ? "rotate-90" : "rotate-0"
               }`}
               fill="none"
@@ -70,7 +70,7 @@ export function Navigation() {
             isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <nav className="pb-4 space-y-2">
+          <nav className="pb-4 space-y-2 text-center">
             {navItems.map((item) => (
               <Link
                 key={item.href}
