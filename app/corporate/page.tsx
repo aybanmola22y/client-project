@@ -77,32 +77,46 @@ export default function Corporate() {
   ))}
 </div>
 
-          {/* Corporate Partners Section */}
-          <div className="mb-16 mt-24">
-            <h2 className="text-5xl font-bold text-green-700 mb-12 text-center">Our Corporate Partnerships</h2>
-            <div className="relative overflow-hidden bg-white py-12 rounded-lg shadow-md">
-              <div className="flex animate-scroll">
-                {/* First set of logos */}
-                <div className="flex items-center justify-around min-w-full gap-12 px-8">
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                </div>
-                {/* Duplicate set for seamless loop */}
-                <div className="flex items-center justify-around min-w-full gap-12 px-8">
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                  <img src="/kebab.jpg" alt="Kebab Bhai" className="h-20 object-contain grayscale hover:grayscale-0 transition-all" />
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Corporate Partners Section */}
+<div className="mb-16 mt-24">
+  <h2 className="text-5xl font-bold text-green-700 mb-12 text-center">
+    Our Corporate Partnerships
+  </h2>
+  <div className="relative overflow-hidden bg-white py-12 rounded-lg shadow-md">
+    <div className="flex animate-scroll whitespace-nowrap">
+      {/* First set of logos */}
+      <div className="flex items-center gap-20 px-8 shrink-0">
+        {[
+          "/1.jpg", "/2.jpg", "/3.png", "/4.jpg", "/5.webp", "/6.png",
+          "/7.jpg", "/8.jpg", "/9.png", "/10.jpg", "/11.jpeg", "/12.jpg", "/14.png"
+        ].map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt={`Partner ${index + 1}`}
+            className="h-28 object-contain transition-transform duration-300 hover:scale-105"
+          />
+        ))}
+      </div>
+
+      {/* Duplicate set for seamless loop */}
+      <div className="flex items-center gap-20 px-8 shrink-0">
+        {[
+          "/1.jpg", "/2.jpg", "/3.png", "/4.jpg", "/5.webp", "/6.png",
+          "/7.jpg", "/8.jpg", "/9.png", "/10.jpg", "/11.jpeg", "/12.jpg,", "/13,jpg"
+        ].map((src, index) => (
+          <img
+            key={`dup-${index}`}
+            src={src}
+            alt={`Partner ${index + 1}`}
+            className="h-28 object-contain transition-transform duration-300 hover:scale-105"
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </main>
 

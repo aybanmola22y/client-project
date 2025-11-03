@@ -159,7 +159,7 @@ export default function Gallery() {
       {/* Stats Section */}
 <section className="py-20 bg-card">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-4xl font-bold text-center text-foreground mb-16 text-balance">
+    <h2 className="text-4xl font-bold text-center text-green-700 mb-16 text-balance">
       By The Numbers
     </h2>
 
@@ -171,13 +171,14 @@ export default function Gallery() {
         { number: "10+", label: "Skilled Professionals" },
       ].map((stat, index) => (
         <div key={index}>
-          <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
+          <div className="text-4xl font-bold text-green-700 mb-2">{stat.number}</div>
           <div className="text-foreground/70">{stat.label}</div>
         </div>
       ))}
     </div>
   </div>
 </section>
+
 
 
       {/* Testimonials Section */}
