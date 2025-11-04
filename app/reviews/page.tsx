@@ -16,7 +16,7 @@ export default function Reviews() {
         "786-SG consistently provides top-quality halal meat products. Their service and delivery are always reliable — our customers love the freshness and taste!",
       date: "October 23, 2025",
       rating: 5,
-      image: "/review1.webp",
+      image: "/gordon.jpg",
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export default function Reviews() {
         "I’m impressed with their attention to halal compliance. The meat is always tender and well-packed. Highly recommended for home cooks like me!",
       date: "September 15, 2025",
       rating: 5,
-      image: "/review2.webp",
+      image: "/gordon.jpg",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export default function Reviews() {
         "Partnering with 786-SG has been a great business decision. They prioritize sustainability and quality — it’s a partnership we truly value.",
       date: "August 30, 2025",
       rating: 4,
-      image: "/review3.webp",
+      image: "/gordon.jpg",
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ export default function Reviews() {
         "Partnering with 786-SG has been a great business decision. They prioritize sustainability and quality — it’s a partnership we truly value.",
       date: "August 30, 2025",
       rating: 4,
-      image: "/review3.webp",
+      image: "/gordon.jpg",
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ export default function Reviews() {
         "Partnering with 786-SG has been a great business decision. They prioritize sustainability and quality — it’s a partnership we truly value.",
       date: "August 30, 2025",
       rating: 4,
-      image: "/review3.webp",
+      image: "/gordon.jpg",
     },
     {
       id: 6,
@@ -66,7 +66,7 @@ export default function Reviews() {
         "Partnering with 786-SG has been a great business decision. They prioritize sustainability and quality — it’s a partnership we truly value.",
       date: "August 30, 2025",
       rating: 4,
-      image: "/review3.webp",
+      image: "/gordon.jpg",
     },
     {
       id: 7,
@@ -76,7 +76,7 @@ export default function Reviews() {
         "Partnering with 786-SG has been a great business decision. They prioritize sustainability and quality — it’s a partnership we truly value.",
       date: "August 30, 2025",
       rating: 4,
-      image: "/review3.webp",
+      image: "/gordon.jpg",
     },
   ]
 
