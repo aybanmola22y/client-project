@@ -52,8 +52,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/news" className="hover:text-accent transition-colors">
-                  News & Articles
+                <Link href="/reviews" className="hover:text-accent transition-colors">
+                  Reviews
                 </Link>
               </li>
               <li>

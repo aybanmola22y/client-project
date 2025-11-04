@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import Link from "next/link"
 import { Leaf, CheckCircle, DollarSign, Award } from "lucide-react"
 
+
 export default function Home() {
   return (
     <>

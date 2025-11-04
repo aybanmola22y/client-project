@@ -22,53 +22,59 @@ export default function About() {
       </section>
 
       {/* Mission */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-green-700 mb-6">Mission</h2>
-              <div className="space-y-4 text-foreground/70 leading-relaxed">
-                <p>
-                  At 786 SG, our mission is to be the trusted choice for food services, caterers, and restaurants by providing premium, cleanly processed meat. 
-                  We uphold the highest standards of honesty, fairness, and quality, embracing innovation to consistently exceed client expectations. 
-                  With a focus on integrity and excellence, we strive to deliver outstanding value and build lasting relationships in the food industry.
-                </p>
-              </div>
-            </div>
-            <div className="relative h-96">
-              <img
-                src="/mission.jpg"
-                alt=""
-                className="w-full h-full object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
+<section className="py-20 bg-background">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 className="text-4xl font-bold text-green-700 mb-6">Mission</h2>
+        <div className="space-y-4 text-foreground/70 leading-relaxed">
+          <p>
+            At 786 SG, our mission is to be the trusted choice for food services, caterers, and restaurants by providing premium, cleanly processed meat.
+            We uphold the highest standards of honesty, fairness, and quality, embracing innovation to consistently exceed client expectations.
+            With a focus on integrity and excellence, we strive to deliver outstanding value and build lasting relationships in the food industry.
+          </p>
         </div>
-      </section>
+      </div>
+
+      <div className="relative w-full h-[450px]">
+        <img
+          src="/misyon.jpg"
+          alt="Mission"
+          className="absolute inset-0 w-full h-full object-fill rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Vision */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-green-700 mb-6">Vision</h2>
-              <div className="space-y-4 text-foreground/70 leading-relaxed">
-                <p>
-                  Our vision at 786 SG is to set the highest standards in quality, safety, and integrity, delivering innovative meat cutting solutions for caterers, food services, and restaurants. 
-                  We strive to build a globally recognized brand known for exceptional service, industry advancement, and lasting relationships.
-                </p>
-              </div>
-            </div>
-            <div className="relative h-96">
-              <img
-                src="/mission.jpg"
-                alt=""
-                className="w-full h-full object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
+<section className="py-20 bg-background">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 className="text-4xl font-bold text-green-700 mb-6">Vision</h2>
+        <div className="space-y-4 text-foreground/70 leading-relaxed">
+          <p>
+            Our vision at 786 SG is to set the highest standards in quality, safety, and integrity,
+            delivering innovative meat cutting solutions for caterers, food services, and restaurants.
+            We strive to build a globally recognized brand known for exceptional service,
+            industry advancement, and lasting relationships.
+          </p>
         </div>
-      </section>
+      </div>
+
+      <div className="relative w-full h-[450px]">
+        <img
+          src="/bisyon.jpg"
+          alt="Vision"
+          className="absolute inset-0 w-full h-full object-fill rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Quality Commitment Section */}
 <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#E8E8E8]">
