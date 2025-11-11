@@ -41,7 +41,7 @@ export default function Home() {
             {/* Right Image */}
             <div className="relative h-96 lg:h-full min-h-96">
               <img
-                src="/786.png"
+                src="/final logo.jpeg"
                 alt="Premium meat cuts"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />

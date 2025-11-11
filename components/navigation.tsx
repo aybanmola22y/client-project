@@ -27,7 +27,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-3 z-10">
             <div className="w-14 h-14 flex items-center justify-center">
               <img 
-                src="/logo.jpg"
+                src="/2nd final.jpeg"
                 alt="786 Logo"
                 className="w-full h-full object-contain"
               />
