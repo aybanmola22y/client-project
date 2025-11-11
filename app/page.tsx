@@ -116,7 +116,7 @@ export default function Home() {
             {/* Right Image */}
             <div className="relative h-96 lg:h-full min-h-96">
               <img
-                src="/haha.jpg"
+                src="/last.jpg"
                 alt="Premium meat cuts"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />
