@@ -189,7 +189,7 @@ export default function Gallery() {
             {[
               {
                 quote:
-                  "786 has been our trusted supplier for over 10 years. The quality and consistency are unmatched.",
+                  "786 has been our trusted supplier for over 5 years. The quality and consistency are unmatched.",
                 author: "Chef Marcus",
                 restaurant: "The Grill House",
               },

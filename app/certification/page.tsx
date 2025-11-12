@@ -10,102 +10,12 @@ export default function Certification() {
       <section className="py-20 bg-gradient-to-b from-background to-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl lg:text-6xl font-bold text-green-700 mb-6 text-balance">
-            Certifications & Standards
+            Quality Assurance
           </h1>
           <p className="text-xl text-foreground/70 max-w-3xl">
             786-SG maintains the highest standards of quality, safety, and compliance. Our certifications reflect
             our commitment to excellence.
           </p>
-        </div>
-      </section>
-
-      {/* Main Certifications */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-green-700 mb-16 text-balance">Our Certifications</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "USDA Certified Facility",
-                description:
-                  "786-SG operates as a USDA-certified meat processing facility, meeting all federal regulations for food safety and quality standards.",
-                details: [
-                  "Regular USDA inspections",
-                  "Compliance with FSIS regulations",
-                  "Hazard Analysis and Critical Control Points (HACCP)",
-                  "Sanitation Standard Operating Procedures (SSOPs)",
-                ],
-              },
-              {
-                title: "ISO 22000:2018 Certified",
-                description:
-                  "Our Food Safety Management System is certified to ISO 22000:2018, ensuring systematic control of food safety hazards.",
-                details: [
-                  "Comprehensive food safety management",
-                  "Risk assessment and mitigation",
-                  "Traceability systems",
-                  "Continuous improvement processes",
-                ],
-              },
-              {
-                title: "SQF Level 3 Certified",
-                description:
-                  "Safe Quality Food (SQF) Level 3 certification demonstrates our commitment to the highest food safety standards in the industry.",
-                details: [
-                  "Advanced food safety protocols",
-                  "Third-party audits",
-                  "Supplier verification programs",
-                  "Product traceability",
-                ],
-              },
-              {
-                title: "Organic Certified",
-                description:
-                  "We are certified to handle and supply organic meat products, meeting all USDA National Organic Program requirements.",
-                details: [
-                  "USDA Organic certification",
-                  "Organic product handling procedures",
-                  "Segregation protocols",
-                  "Documentation and record-keeping",
-                ],
-              },
-              {
-                title: "Humane Handling Certified",
-                description:
-                  "Our facility meets American Meat Institute (AMI) standards for humane animal handling and welfare.",
-                details: [
-                  "Humane handling training",
-                  "Facility design standards",
-                  "Animal welfare protocols",
-                  "Regular audits and inspections",
-                ],
-              },
-              {
-                title: "Environmental Compliance",
-                description:
-                  "786-SG maintains full compliance with EPA environmental regulations and implements sustainable practices.",
-                details: [
-                  "Waste management systems",
-                  "Water treatment protocols",
-                  "Emissions monitoring",
-                  "Sustainability initiatives",
-                ],
-              },
-            ].map((cert, index) => (
-              <div key={index} className="bg-card p-8 rounded-lg shadow-md transition-all hover:scale-105">
-                <h3 className="text-2xl font-bold text-green-700 mb-3">{cert.title}</h3>
-                <p className="text-foreground/70 mb-6">{cert.description}</p>
-                <ul className="space-y-2">
-                  {cert.details.map((detail, detailIndex) => (
-                    <li key={detailIndex} className="flex items-start gap-3">
-                      <span className="text-green-700 font-bold mt-1">✓</span>
-                      <span className="text-foreground/70">{detail}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
